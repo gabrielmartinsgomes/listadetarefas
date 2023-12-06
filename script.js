@@ -11,16 +11,23 @@ adicionar.addEventListener("click", function(){
     paragrafo.innerText = texto.value; 
     afazer.appendChild(paragrafo);
     texto.value = ""
+    texto.focus()
     paragrafo.addEventListener("click", function(){
         afazer.removeChild(paragrafo);
         tarefacompleta.appendChild(paragrafo);
+        texto.value = ""
+        texto.focus()
     })
     botaofinish.addEventListener("click", function(){
         afazer.removeChild(paragrafo);
         tarefacompleta.appendChild(paragrafo);
+        texto.value = ""
+        texto.focus()
     })
     botaofinish2.addEventListener("click", function(){
         tarefacompleta.removeChild(paragrafo);
+        texto.value = ""
+        texto.focus()
     })
     
 })
