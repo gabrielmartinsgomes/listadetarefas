@@ -24,7 +24,7 @@ h1{
     
 }
 
-#camporesultado{
+#texto{
     width: 300px;
     height: 30px;
     border: 1px solid black;
@@ -60,7 +60,7 @@ h1{
 }
 
 
-.paragrafoestilo {
+.paragrafostyle {
     margin: 0 auto;
     cursor: pointer;
     font-size: 30px;

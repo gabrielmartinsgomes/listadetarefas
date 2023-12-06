@@ -1,25 +1,25 @@
-let botaoadiconar = document.getElementById("adicionar");
-let containertarefa = document.getElementById("containertarefa");
-let campoinput = document.getElementById("camporesultado")
-let botaolimpar = document.getElementById("limpar");
-let botaolimpar2 = document.getElementById("limpar2")
-let tarefacompleta = document.getElementById("containertarefacompleta")
+let adicionar = document.getElementById("adicionar");
+let afazer = document.getElementById("afazer");
+let texto = document.getElementById("texto")
+let botaofinish = document.getElementById("finish");
+let botaofinish2 = document.getElementById("finish2")
+let tarefacompleta = document.getElementById("tarefacompleta")
 
-botaoadiconar.addEventListener("click", function(){
+adicionar.addEventListener("click", function(){
     let paragrafo = document.createElement("p");
-    paragrafo.classList.add('paragrafoestilo');
-    paragrafo.innerText = campoinput.value; 
-    containertarefa.appendChild(paragrafo);
-    campoinput.value = ""
+    paragrafo.classList.add('paragrafostyle');
+    paragrafo.innerText = texto.value; 
+    afazer.appendChild(paragrafo);
+    texto.value = ""
     paragrafo.addEventListener("click", function(){
-        containertarefa.removeChild(paragrafo);
+        afazer.removeChild(paragrafo);
         tarefacompleta.appendChild(paragrafo);
     })
-    botaolimpar.addEventListener("click", function(){
-        containertarefa.removeChild(paragrafo);
+    botaofinish.addEventListener("click", function(){
+        afazer.removeChild(paragrafo);
         tarefacompleta.appendChild(paragrafo);
     })
-    botaolimpar2.addEventListener("click", function(){
+    botaofinish2.addEventListener("click", function(){
         tarefacompleta.removeChild(paragrafo);
     })
     
